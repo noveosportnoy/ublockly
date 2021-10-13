@@ -154,7 +154,7 @@ namespace UBlockly.UGUI
                 using (UnityWebRequest webRequest = UnityWebRequest.Get(path))
                 {
                     yield return webRequest.SendWebRequest();
-                    if (webRequest.result != UnityWebRequest.Result.Success) {
+                    if (webRequest.isHttpError || webRequest.isNetworkError) {
                         throw new Exception(webRequest.error + ": " + path);
                     }
                     inputXml = webRequest.downloadHandler.text;
