@@ -1,0 +1,19 @@
+[
+  {
+    "type": "heads_set",
+    "message0": "%2 %1",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "ANGLE",
+        "value": 0
+      },
+      { 
+        "type": "field_image",
+        "src": "Bricks/n_bl45",
+        "alt": "IMAGE"
+      }
+    ],
+    "output": null
+  }
+]
